@@ -25,6 +25,52 @@ Sua missão é construir uma Rede Neural capaz de jogar Campo Minado e sobrevive
 5. **Pegue os Dados:**
    Na pasta `dataset/` você encontrará as instruções e o link para baixar as matrizes do Campo Minado.
 
+## 📥 Preparando o Dataset (Os Dados de Treino)
+
+Para facilitar a vida do Squad, o dataset oficial já foi incluído no repositório, mas está compactado para respeitar os limites do GitHub.
+
+**Antes de rodar qualquer código, faça o seguinte:**
+
+1. Navegue até a pasta `data/` do seu repositório local.
+2. Você encontrará o arquivo `minesweeper_data.zip`.
+3. **Extraia (Unzip)** este arquivo na própria pasta `data/`.
+4. O arquivo extraído deve se chamar obrigatoriamente `minesweeper_data.csv`.
+
+Sua estrutura final deve ficar exatamente assim para o código funcionar:
+```text
+ai-sweeper/
+├── data/
+│   ├── minesweeper_data.zip    <-- O arquivo original compactado
+│   └── minesweeper_data.csv    <-- O arquivo que você extraiu (O código lerá este!)
+├── src/
+...
+```
+
+### Opção Kaggle
+
+Caso queira você pode utilizar o dataset diretamente do Kaggle. 
+
+**Siga este passo a passo rigorosamente:**
+
+1. Crie uma conta gratuita no [Kaggle](https://www.kaggle.com/) (se ainda não tiver uma).
+2. Acesse a página do dataset oficial procurando por **"Minesweeper Game Dataset"** (ou acesse o link fornecido pelo professor no portal da disciplina).
+3. Clique no botão **Download** (Geralmente baixa um arquivo compactado `.zip`).
+4. **Extraia o arquivo .zip** no seu computador.
+5. Pegue o arquivo extraído (que deve ser um `.csv`) e mova-o para dentro da pasta `data/` do seu repositório local.
+6. ⚠️ **Muito Importante:** Renomeie o arquivo para `minesweeper_data.csv`. Os Starter Kits estão programados para procurar exatamente por este nome!
+
+Se a sua estrutura ficar assim, você está pronto para codar:
+
+```text
+ai-sweeper/
+├── data/
+│   └── minesweeper_data.csv    <-- Seu arquivo deve estar exatamente aqui!
+├── src/
+...
+
+⚠️ **Aviso de Engenharia:** O arquivo `.csv` tem mais de 100 MB. O `.gitignore` do projeto já está configurado para **ignorar** esse arquivo CSV gigante. Não tentem forçar o commit dele, ou o repositório de vocês será bloqueado pelo GitHub!
+
+
 ## 📂 Estrutura do Projeto
 
 A organização do código reflete os padrões da indústria para MLOps:
