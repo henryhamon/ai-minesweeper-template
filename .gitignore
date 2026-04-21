@@ -3,6 +3,18 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Arquivos de Sistema
+.DS_Store
+__pycache__/
+
+# (Opcional) Ignorar os modelos treinados para economizar espaço
+# *.pth
+# *.h5
+# *.keras
+
 # C extensions
 *.so
 
