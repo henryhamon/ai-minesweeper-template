@@ -67,6 +67,7 @@ ai-sweeper/
 │   └── minesweeper_data.csv    <-- Seu arquivo deve estar exatamente aqui!
 ├── src/
 ...
+```
 
 ⚠️ **Aviso de Engenharia:** O arquivo `.csv` tem mais de 100 MB. O `.gitignore` do projeto já está configurado para **ignorar** esse arquivo CSV gigante. Não tentem forçar o commit dele, ou o repositório de vocês será bloqueado pelo GitHub!
 
