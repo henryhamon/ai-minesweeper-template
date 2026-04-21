@@ -19,6 +19,8 @@ __pycache__/
 dataset/*.csv
 dataset/*.parquet
 dataset/*.pkl
+data/*.csv
+data/*.json
 
 # C extensions
 *.so
